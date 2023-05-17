@@ -1,8 +1,8 @@
 [![GitHub](https://img.shields.io/github/license/fullstackhero/dotnet-webapi-boilerplate?color=2da44e)](https://github.com/fullstackhero/dotnet-webapi-boilerplate/blob/master/LICENSE)
-[![Actions Main](https://github.com/pixel-pinata/template-web-app-react/actions/workflows/main.yml/badge.svg)](https://github.com/pixel-pinata/template-web-app-react/actions/workflows/main.yml)
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/template-web-app-react/)
+[![Actions Main](https://github.com/pixel-pinata/template-web-component-react/actions/workflows/main.yml/badge.svg)](https://github.com/Pettor/template-web-component-react/actions/workflows/main.yml)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/template-web-component-react/)
 
-## Web Application Template for React
+## Web Component Template for React
 
 ### Installing
 

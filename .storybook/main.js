@@ -12,7 +12,7 @@ const config = {
     "@storybook/addon-viewport",
   ],
   docs: {
-    defaultName: 'Docs',
+    defaultName: "Docs",
   },
   async viteFinal(config) {
     return mergeConfig(config, {

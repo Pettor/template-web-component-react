@@ -9,9 +9,6 @@
     "paths": {
       "~/*": ["./src/*"]
     },
-    "types": [
-      "vite-plugin-pwa/client"
-    ],
     // Rules
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
@@ -27,6 +24,5 @@
     "useDefineForClassFields": true
   },
   "include": ["./src", "types/reset.d.ts"],
-  "exclude": ["dist"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["storybook-static"],
 }

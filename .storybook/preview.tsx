@@ -6,7 +6,7 @@ import { withThemeFromJSXProvider } from "@storybook/addon-styling";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import type { StoryFn, StoryContext } from "@storybook/react";
 import { IntlProvider } from "react-intl";
-import createAppTheme from "../src/libs/theme/Theme";
+import createAppTheme from "../src/theme/Theme";
 import { reactIntl } from "./plugins/reactIntl";
 
 export const parameters = {
@@ -16,7 +16,7 @@ export const parameters = {
   options: {
     storySort: {
       method: "alphabetical",
-      order: ["Design System", "Library", "Forms", "Navigation", "Layout", "Views"],
+      order: ["Design System", "Library"],
     },
   },
 };
