@@ -10,6 +10,12 @@
 pnpm i
 ```
 
+## Usage
+
+```bash
+pnpm dev
+```
+
 ## License
 
 This project is licensed with the [MIT license](LICENSE).
