@@ -39,15 +39,6 @@ export function Background(): ReactElement {
   const {
     background: { default: defaultBackground, paper: paperBackground },
   } = theme.palette;
-  const {
-    customBackgrounds: {
-      accent: { light: accentLight, main: accentMain, dark: accentDark },
-      common: { transparent },
-      gradients: {
-        linear: { variation1 },
-      },
-    },
-  } = theme;
 
   return (
     <DocumentationLayout label="Background">
@@ -64,38 +55,6 @@ export function Background(): ReactElement {
         </Grid>
         {ColorRow("Default", defaultBackground)}
         {ColorRow("Paper", paperBackground)}
-
-        <Grid item xs={3}>
-          <Item>
-            <Typography variant="h6" sx={{ mt: 2 }}>
-              Accent
-            </Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={9} />
-        {ColorRow("Main", accentMain)}
-        {ColorRow("Light", accentLight)}
-        {ColorRow("Dark", accentDark)}
-
-        <Grid item xs={3}>
-          <Item>
-            <Typography variant="h6" sx={{ mt: 2 }}>
-              Common
-            </Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={9} />
-        {ColorRow("Transparent", transparent)}
-
-        <Grid item xs={3}>
-          <Item>
-            <Typography variant="h6" sx={{ mt: 2 }}>
-              Gradients
-            </Typography>
-          </Item>
-        </Grid>
-        <Grid item xs={9} />
-        {ColorRow("Variation 1", variation1)}
       </Grid>
     </DocumentationLayout>
   );
