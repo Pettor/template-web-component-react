@@ -8,6 +8,7 @@ const config = {
   addons: [
     "@storybook/addon-a11y",
     "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
     "@storybook/addon-styling",
     "@storybook/addon-viewport",
   ],
@@ -25,6 +26,7 @@ const config = {
         include: [
           "@storybook/addon-a11y",
           "@storybook/addon-essentials",
+          "@storybook/addon-interactions",
           "@storybook/addon-styling",
           "@storybook/addon-viewport",
         ],
