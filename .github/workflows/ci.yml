@@ -84,3 +84,6 @@ jobs:
 
       - name: Build application
         run: pnpm build
+
+      - name: Test application
+        run: pnpm test:ci
