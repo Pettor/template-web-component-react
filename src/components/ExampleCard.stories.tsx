@@ -1,18 +1,18 @@
 import { expect } from "@storybook/jest";
 import type { Meta, StoryObj } from "@storybook/react";
-import { within } from "@storybook/testing-library";
-import { Component } from "./Component";
-import CommonDecorator from "./stories/decorators/CommonDecorator";
+import { within, userEvent } from "@storybook/testing-library";
+import { ExampleCard } from "./ExampleCard";
+import CommonDecorator from "~/stories/decorators/CommonDecorator";
 
 const meta = {
-  component: Component,
-  title: "Library/Component",
+  component: ExampleCard,
+  title: "Library/ExampleCard",
   decorators: [CommonDecorator],
   tags: ["autodocs"],
-} satisfies Meta<typeof Component>;
+} satisfies Meta<typeof ExampleCard>;
 
 export default meta;
-type Story = StoryObj<typeof Component>;
+type Story = StoryObj<typeof meta>;
 
 export const WithLabel = {
   args: {
@@ -20,7 +20,8 @@ export const WithLabel = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-
     expect(canvas.getByText("Hello, World!")).toBeInTheDocument();
+
+    await userEvent.click(canvas.getByTestId("example-card__share-button"));
   },
 } satisfies Story;

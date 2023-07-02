@@ -43,7 +43,6 @@ export default function createAppTheme(mode: PaletteMode = "light"): Theme {
       },
       typography: {
         fontFamily: "Rubik",
-
         h1: {
           fontWeight: "500",
         },

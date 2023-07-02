@@ -5,6 +5,7 @@
   "license": "MIT",
   "packageManager": "pnpm@8.6.3",
   "scripts": {
+    "prepare": "husky install",
     "dev": "pnpm storybook:dev",
     "build": "pnpm storybook:build",
     "test": "pnpm storybook:test",
@@ -15,6 +16,7 @@
     "storybook:test": "test-storybook --url http://127.0.0.1:6006",
     "storybook:test:ci": "start-server-and-test \"pnpm storybook:server\" http://127.0.0.1:6006 \"pnpm storybook:test\"",
     "lint": "eslint ./src ./.storybook --ext .js,.ts,.tsx",
+    "lint:fix": "pnpm lint --fix",
     "i18n": "pnpm i18n:extract && pnpm i18n:compile",
     "i18n:extract": "formatjs extract src/**/*.ts* --ignore=**/*.d.ts --out-file locale/extracted/en.json --id-interpolation-pattern [sha512:contenthash:base64:6] --flatten",
     "i18n:compile": "formatjs compile-folder --ast locale/extracted locale/compiled"
@@ -30,6 +32,9 @@
     "react-intl": "6.4.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.6.6",
+    "@commitlint/config-conventional": "17.6.6",
+    "@commitlint/types": "17.4.4",
     "@emotion/core": "11.0.0",
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
@@ -47,6 +52,7 @@
     "@storybook/test-runner": "0.11.0",
     "@storybook/testing-library": "0.2.0",
     "@total-typescript/ts-reset": "0.4.2",
+    "@types/node": "20.3.3",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@types/testing-library__jest-dom": "^5.14.6",
@@ -64,6 +70,7 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-storybook": "0.6.12",
     "http-server": "14.1.1",
+    "husky": "8.0.3",
     "playwright": "1.35.1",
     "prettier": "2.8.8",
     "start-server-and-test": "2.0.0",
