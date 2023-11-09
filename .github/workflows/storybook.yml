@@ -42,10 +42,10 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build Storybook
-        run: pnpm build --quiet
+        run: pnpm storybook:build --quiet
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
 
