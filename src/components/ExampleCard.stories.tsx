@@ -2,7 +2,7 @@ import { expect } from "@storybook/jest";
 import type { Meta, StoryObj } from "@storybook/react";
 import { within, userEvent } from "@storybook/testing-library";
 import { ExampleCard as Component } from "./ExampleCard";
-import CommonDecorator from "~/stories/decorators/CommonDecorator";
+import { CommonDecorator } from "~/stories/decorators/CommonDecorator";
 
 const meta = {
   component: Component,
