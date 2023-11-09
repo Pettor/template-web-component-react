@@ -1,7 +1,10 @@
 import { useCallback, type ReactElement } from "react";
+import { useDocumentTitle } from "usehooks-ts";
 import { ExampleCard } from "~/components/ExampleCard";
 
 export function App(): ReactElement {
+  useDocumentTitle("LANDING PAGE");
+
   const handleShare = useCallback(() => {
     console.log("Share button clicked!");
   }, []);
