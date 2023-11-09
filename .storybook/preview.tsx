@@ -15,22 +15,6 @@ export const parameters = {
   },
 };
 
-export const globalTypes = {
-  locale: {
-    title: "Locale",
-    description: "Formatjs locale",
-    defaultValue: "en",
-    toolbar: {
-      icon: "globe",
-      dynamicTitle: true,
-      items: [
-        // Add locales here
-        { value: "en", title: "English" },
-      ],
-    },
-  },
-};
-
 export const decorators = [
   withThemeByClassName({
     themes: {
