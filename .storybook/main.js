@@ -7,9 +7,8 @@ const config = {
   stories: ["../src/**/*.stories.@(ts|tsx)"],
   addons: [
     "@storybook/addon-a11y",
-    "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-styling",
+    "@storybook/addon-themes",
     "@storybook/addon-viewport",
   ],
   docs: {
@@ -25,9 +24,8 @@ const config = {
       optimizeDeps: {
         include: [
           "@storybook/addon-a11y",
-          "@storybook/addon-essentials",
           "@storybook/addon-interactions",
-          "@storybook/addon-styling",
+          "@storybook/addon-themes",
           "@storybook/addon-viewport",
         ],
       },

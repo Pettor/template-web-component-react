@@ -1,12 +1,9 @@
 import type { ReactElement } from "react";
 import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
-import { withThemeFromJSXProvider } from "@storybook/addon-styling";
+import { withThemeByDataAttribute } from "@storybook/addon-themes";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import type { StoryFn, StoryContext } from "@storybook/react";
 import { IntlProvider } from "react-intl";
-import createAppTheme from "../src/theme/Theme";
 import { reactIntl } from "./plugins/reactIntl";
 import "../src/main.css";
 
@@ -38,6 +35,18 @@ export const globalTypes = {
   },
 };
 
+export const decorators = [
+  withLocaleProvider,
+  withThemeByDataAttribute({
+    themes: {
+      light: "light",
+      dark: "dark",
+    },
+    defaultTheme: "light",
+    attributeName: "data-theme",
+  }),
+];
+
 function withLocaleProvider(Story: StoryFn, context: StoryContext): ReactElement {
   const { locale } = context.globals;
   const { messages } = reactIntl;
@@ -48,16 +57,3 @@ function withLocaleProvider(Story: StoryFn, context: StoryContext): ReactElement
     </IntlProvider>
   );
 }
-
-export const decorators = [
-  withLocaleProvider,
-  withThemeFromJSXProvider({
-    themes: {
-      light: createAppTheme("light"),
-      dark: createAppTheme("dark"),
-    },
-    defaultTheme: "light",
-    Provider: ThemeProvider,
-    GlobalStyles: CssBaseline,
-  }),
-];

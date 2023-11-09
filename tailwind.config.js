@@ -3,8 +3,15 @@ module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: ["class"],
+  daisyui: {
+    darkTheme: "dark"
+  },
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: "Rubik",
+      fontWeight: 500,
+    },
   },
   plugins: [require("daisyui")],
 };
