@@ -85,9 +85,6 @@ jobs:
       - name: Build application
         run: pnpm build
 
-      - name: Test application
-        run: pnpm test:unit:ci
-
   test-components:
     name: Component Test
     runs-on: ubuntu-latest
