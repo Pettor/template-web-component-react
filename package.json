@@ -10,6 +10,7 @@
     "build": "pnpm storybook:build",
     "test": "pnpm storybook:test",
     "test:ci": "pnpm storybook:test:ci",
+    "storybook": "pnpm storybook:dev",
     "storybook:dev": "storybook dev",
     "storybook:build": "storybook build",
     "storybook:server": "npx http-server storybook-static --port 6006 --silent",
