@@ -86,7 +86,7 @@ jobs:
         run: pnpm build
 
       - name: Test application
-        run: pnpm test:ci
+        run: pnpm test:unit:ci
 
   test-components:
     name: Component Test
@@ -124,6 +124,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright
+        run: npx playwright install
 
       - name: Build storybook
         run: pnpm storybook:build
