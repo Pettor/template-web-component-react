@@ -1,7 +1,7 @@
 import { withThemeByDataAttribute } from "@storybook/addon-themes";
 import { withThemeByClassName } from "@storybook/addon-themes";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
-import "../src/main.css";
+import "../src/assets/styling/main.css";
 
 export const parameters = {
   viewport: {
