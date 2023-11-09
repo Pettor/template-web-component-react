@@ -1,15 +1,15 @@
 import { expect } from "@storybook/jest";
 import type { Meta, StoryObj } from "@storybook/react";
 import { within, userEvent } from "@storybook/testing-library";
-import { ExampleCard } from "./ExampleCard";
+import { ExampleCard as Component } from "./ExampleCard";
 import CommonDecorator from "~/stories/decorators/CommonDecorator";
 
 const meta = {
-  component: ExampleCard,
+  component: Component,
   title: "Library/ExampleCard",
   decorators: [CommonDecorator],
   tags: ["autodocs"],
-} satisfies Meta<typeof ExampleCard>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

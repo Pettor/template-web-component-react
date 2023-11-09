@@ -8,6 +8,7 @@ import type { StoryFn, StoryContext } from "@storybook/react";
 import { IntlProvider } from "react-intl";
 import createAppTheme from "../src/theme/Theme";
 import { reactIntl } from "./plugins/reactIntl";
+import "../src/main.css";
 
 export const parameters = {
   viewport: {
