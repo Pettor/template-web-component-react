@@ -85,8 +85,8 @@ jobs:
       - name: Build application
         run: pnpm build
 
-  test-components:
-    name: Component Test
+  storybook:
+    name: Storybook
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -128,5 +128,5 @@ jobs:
       - name: Build storybook
         run: pnpm storybook:build
 
-      - name: Test application
+      - name: Run unit tests
         run: pnpm test:unit:ci
