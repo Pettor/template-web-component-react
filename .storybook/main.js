@@ -5,11 +5,14 @@ import tsconfigPaths from "vite-tsconfig-paths";
 const config = {
   framework: "@storybook/react-vite",
   stories: ["../src/**/*.stories.@(ts|tsx)"],
+  features: {
+    storyStoreV7: true,
+  },
   addons: [
     "@storybook/addon-a11y",
-    "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-styling",
+    "@storybook/addon-essentials",
+    "@storybook/addon-themes",
     "@storybook/addon-viewport",
   ],
   docs: {
@@ -18,16 +21,13 @@ const config = {
   async viteFinal(config) {
     return mergeConfig(config, {
       base: "./",
-      plugins: [
-        tsconfigPaths()
-      ],
+      plugins: [tsconfigPaths()],
       // Add storybook-specific dependencies to pre-optimization
       optimizeDeps: {
         include: [
           "@storybook/addon-a11y",
-          "@storybook/addon-essentials",
           "@storybook/addon-interactions",
-          "@storybook/addon-styling",
+          "@storybook/addon-themes",
           "@storybook/addon-viewport",
         ],
       },

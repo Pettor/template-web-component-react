@@ -13,7 +13,7 @@ To get started with this template, follow these steps:
 1. Clone the repository to your local machine.
 1. Enable `corepack` by running `corepack enable`.
 1. Install the dependencies by running `pnpm i` in the project directory.
-1. Start the development server by running `pnpm storybook`.
+1. Start the development server by running `pnpm dev`.
 
 ## Contributing
 

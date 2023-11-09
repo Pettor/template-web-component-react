@@ -1,13 +1,7 @@
-import type { ReactElement } from "react";
-import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
-import { ThemeProvider } from "@mui/material/styles";
-import { withThemeFromJSXProvider } from "@storybook/addon-styling";
+import { withThemeByDataAttribute } from "@storybook/addon-themes";
+import { withThemeByClassName } from "@storybook/addon-themes";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
-import type { StoryFn, StoryContext } from "@storybook/react";
-import { IntlProvider } from "react-intl";
-import createAppTheme from "../src/theme/Theme";
-import { reactIntl } from "./plugins/reactIntl";
+import "../src/assets/styling/main.css";
 
 export const parameters = {
   viewport: {
@@ -21,42 +15,20 @@ export const parameters = {
   },
 };
 
-export const globalTypes = {
-  locale: {
-    title: "Locale",
-    description: "Formatjs locale",
-    defaultValue: "en",
-    toolbar: {
-      icon: "globe",
-      dynamicTitle: true,
-      items: [
-        // Add locales here
-        { value: "en", title: "English" },
-      ],
-    },
-  },
-};
-
-function withLocaleProvider(Story: StoryFn, context: StoryContext): ReactElement {
-  const { locale } = context.globals;
-  const { messages } = reactIntl;
-
-  return (
-    <IntlProvider locale={locale} messages={messages[locale]}>
-      <Story {...context} />
-    </IntlProvider>
-  );
-}
-
 export const decorators = [
-  withLocaleProvider,
-  withThemeFromJSXProvider({
+  withThemeByClassName({
     themes: {
-      light: createAppTheme("light"),
-      dark: createAppTheme("dark"),
+      light: "light",
+      dark: "dark",
     },
     defaultTheme: "light",
-    Provider: ThemeProvider,
-    GlobalStyles: CssBaseline,
+  }),
+  withThemeByDataAttribute({
+    themes: {
+      light: "light",
+      dark: "dark",
+    },
+    defaultTheme: "light",
+    attributeName: "data-theme",
   }),
 ];
