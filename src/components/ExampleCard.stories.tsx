@@ -6,9 +6,9 @@ import CommonDecorator from "~/stories/decorators/CommonDecorator";
 
 const meta = {
   component: Component,
-  title: "Library/ExampleCard",
-  decorators: [CommonDecorator],
+  title: "Library/Example Card",
   tags: ["autodocs"],
+  decorators: [CommonDecorator],
 } satisfies Meta<typeof Component>;
 
 export default meta;
@@ -24,4 +24,17 @@ export const WithLabel = {
 
     await userEvent.click(canvas.getByTestId("example-card__share-button"));
   },
+} satisfies Story;
+
+export const WithWindow = {
+  args: {
+    label: "Hello, World!",
+  },
+  render: (args) => (
+    <div className="mockup-window border bg-base-300">
+      <div className="flex w-full justify-center p-8">
+        <Component {...args} />
+      </div>
+    </div>
+  ),
 } satisfies Story;

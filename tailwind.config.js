@@ -1,17 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: ["class"],
   daisyui: {
-    darkTheme: "dark"
+    darkTheme: "dark",
   },
+  mode: "jit",
   theme: {
     extend: {
-      fontFamily: "Rubik",
+      fontFamily: {
+        sans: ["Rubik"],
+      },
       fontWeight: 500,
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };

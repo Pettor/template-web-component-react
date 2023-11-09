@@ -17,10 +17,15 @@ interface Props {
 
 export function DocumentationLayout({ label, children }: Props): ReactElement {
   return (
-    <Box>
-      <Typography variant="h1">{label}</Typography>
-      <br />
-      <StyledBox>{children}</StyledBox>
-    </Box>
+    <div className="m-4">
+      <div className="card w-full bg-base-100 shadow-xl">
+        <div className="card-body">
+          <div className="prose card-title">
+            <h1>{label}</h1>
+          </div>
+          {children}
+        </div>
+      </div>
+    </div>
   );
 }
