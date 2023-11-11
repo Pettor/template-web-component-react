@@ -55,7 +55,7 @@
     "cross-env": "7.0.3",
     "daisyui": "3.9.4",
     "emotion-theming": "11.0.0",
-    "eslint": "8.52.0",
+    "eslint": "8.53.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-formatjs": "4.11.0",
     "eslint-plugin-import": "2.29.0",
