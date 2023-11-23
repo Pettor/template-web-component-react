@@ -27,7 +27,7 @@ export function Colors(): ReactElement {
           <div className="flex flex-1 flex-row">
             <div className={"flex basis-1/3 items-center bg-primary p-6"} />
             <div className={"flex basis-1/3 items-center bg-primary-content p-6"} />
-            <div className={"flex basis-1/3 items-center bg-primary-focus p-6"} />
+            <div className={"bg-primary-focus flex basis-1/3 items-center p-6"} />
           </div>
         </div>
         <div className="m-2 flex flex-1">
@@ -35,7 +35,7 @@ export function Colors(): ReactElement {
           <div className="flex flex-1 flex-row">
             <div className={"flex basis-1/3 items-center bg-secondary p-6"} />
             <div className={"flex basis-1/3 items-center bg-secondary-content p-6"} />
-            <div className={"flex basis-1/3 items-center bg-secondary-focus p-6"} />
+            <div className={"bg-secondary-focus flex basis-1/3 items-center p-6"} />
           </div>
         </div>
         <div className="m-2 flex flex-1">
@@ -43,7 +43,7 @@ export function Colors(): ReactElement {
           <div className="flex flex-1 flex-row">
             <div className={"flex basis-1/3 items-center bg-accent p-6"} />
             <div className={"flex basis-1/3 items-center bg-accent-content p-6"} />
-            <div className={"flex basis-1/3 items-center bg-accent-focus p-6"} />
+            <div className={"bg-accent-focus flex basis-1/3 items-center p-6"} />
           </div>
         </div>
         <div className="m-2 flex flex-1">
@@ -51,7 +51,7 @@ export function Colors(): ReactElement {
           <div className="flex flex-1 flex-row">
             <div className={"flex basis-1/3 items-center bg-neutral p-6"} />
             <div className={"flex basis-1/3 items-center bg-neutral-content p-6"} />
-            <div className={"flex basis-1/3 items-center bg-neutral-focus p-6"} />
+            <div className={"bg-neutral-focus flex basis-1/3 items-center p-6"} />
           </div>
         </div>
         <div className="m-2 flex flex-1">
