@@ -49,16 +49,13 @@ jobs:
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
 
-      - name: Add nojekyll fix for Github Pages
-        run: touch storybook-static/.nojekyll
-
-      - name: Deploy storybook
-        run: >
-          pnpm storybook-to-ghpages
-          --ci
-          --source-branch=main
-          --branch=deploy/storybook/main
-          --existing-output-dir=storybook-static
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          build_dir: storybook-static
+          commit_message: "chore(deploy): Storybook"
+          jekyll: false
+          keep_history: false
+          target_branch: deploy/storybook/main
         env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
-          NODE_OPTIONS: "--max_old_space_size=4096"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
