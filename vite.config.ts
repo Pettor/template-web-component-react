@@ -7,5 +7,12 @@ export default defineConfig(() => {
   return {
     base: "./",
     plugins: [react(), tsconfigPaths()],
+    server: {
+      port: 5153,
+      open: true,
+      hmr: {
+        overlay: false,
+      },
+    },
   };
 });

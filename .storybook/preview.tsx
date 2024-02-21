@@ -3,18 +3,6 @@ import { withThemeByClassName } from "@storybook/addon-themes";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import "../src/assets/styling/main.css";
 
-export const parameters = {
-  viewport: {
-    viewports: INITIAL_VIEWPORTS,
-  },
-  options: {
-    storySort: {
-      method: "alphabetical",
-      order: ["Library", "Design System"],
-    },
-  },
-};
-
 export const decorators = [
   withThemeByClassName({
     themes: {
@@ -32,3 +20,16 @@ export const decorators = [
     attributeName: "data-theme",
   }),
 ];
+
+export const parameters = {
+  layout: "fullscreen",
+  options: {
+    storySort: {
+      method: "alphabetical",
+      order: ["Library", "Layout", "Views", "Design System"],
+    },
+  },
+  viewport: {
+    viewports: INITIAL_VIEWPORTS,
+  },
+};

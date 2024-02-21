@@ -8,7 +8,7 @@ export interface ExampleCardProps {
 
 export function ExampleCard({ label, onShare }: ExampleCardProps): ReactElement {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card max-w-96 min-w-16 bg-base-100 shadow-xl">
       <figure>
         <img src={cardImgUrl} alt="Shoes" />
       </figure>
