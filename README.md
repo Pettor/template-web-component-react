@@ -2,9 +2,13 @@
 
 [![GitHub](https://img.shields.io/github/license/fullstackhero/dotnet-webapi-boilerplate?color=2da44e)](https://github.com/fullstackhero/dotnet-webapi-boilerplate/blob/master/LICENSE)
 [![Actions Main](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/template-web-component-react/)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://pettor.github.io/template-web-component-react/storybook/)
 
 This is a template for building web components with React. It uses Storybook to quickly start and iterate on components.
+
+## Web App
+
+Latest version of the web app runs using Github Pages [click here](https://pettor.github.io/template-web-component-react/).
 
 ## Getting Started
 
