@@ -25,14 +25,14 @@
     "lint:fix": "pnpm lint --fix"
   },
   "dependencies": {
-    "@fontsource/rubik": "5.0.20",
+    "@fontsource/rubik": "5.0.21",
     "clsx": "2.1.1",
     "immer": "10.1.1",
-    "jotai": "2.9.2",
+    "jotai": "2.9.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-intl": "6.6.8",
-    "react-router-dom": "6.26.0"
+    "react-router-dom": "6.26.1"
   },
   "devDependencies": {
     "@commitlint/cli": "19.0.3",
