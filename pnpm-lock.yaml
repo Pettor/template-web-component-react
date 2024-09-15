@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fontsource/rubik':
-        specifier: 5.0.21
-        version: 5.0.21
+        specifier: 5.0.22
+        version: 5.0.22
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -1235,8 +1235,8 @@ packages:
   '@floating-ui/utils@0.1.6':
     resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==}
 
-  '@fontsource/rubik@5.0.21':
-    resolution: {integrity: sha512-llUikt1/wbKL+PG73KyAFJEBnvZDiqVn8vTjV6ce7QP91IRmpgIoE4vJj4a0udacQtGaN9dxjmb7MbSxHvw5iA==}
+  '@fontsource/rubik@5.0.22':
+    resolution: {integrity: sha512-HJpKdkoFrCLgXJCZ+xX4aSIVmHvyN/eGkMo7FmlRQQxFlgd4U6D6i+EF5GBI6WWfVy1J1R1vQg6uqETMHsxk9g==}
 
   '@formatjs/ecma402-abstract@1.18.2':
     resolution: {integrity: sha512-+QoPW4csYALsQIl8GbN14igZzDbuwzcpWrku9nyMXlaqAlwRBgl5V+p0vWMGFqHOw37czNXaP/lEk4wbLgcmtA==}
@@ -7765,7 +7765,7 @@ snapshots:
 
   '@floating-ui/utils@0.1.6': {}
 
-  '@fontsource/rubik@5.0.21': {}
+  '@fontsource/rubik@5.0.22': {}
 
   '@formatjs/ecma402-abstract@1.18.2':
     dependencies:
