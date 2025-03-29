@@ -81,7 +81,7 @@
     "tailwindcss": "3.4.1",
     "typescript": "5.4.2",
     "usehooks-ts": "3.0.1",
-    "vite": "5.4.12",
+    "vite": "5.4.15",
     "vite-tsconfig-paths": "4.3.1"
   }
 }
