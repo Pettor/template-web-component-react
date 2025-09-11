@@ -1,0 +1,20 @@
+import{j as e}from"./jsx-runtime-BvI67ttx.js";import{E as u}from"./ExampleCard-d_BHo2Gf.js";import"./index-BEEaWAwe.js";import"./_commonjsHelpers-BosuxZz1.js";function o(r){return e.jsx("div",{className:"p-2",children:e.jsx(r,{})})}try{o.displayName="CommonDecorator",o.__docgenInfo={description:"",displayName:"CommonDecorator",props:{name:{defaultValue:null,description:"Override the display name in the UI (CSF v3)",name:"name",required:!1,type:{name:"string"}},decorators:{defaultValue:null,description:`Wrapper components or Storybook decorators that wrap a story.
+
+Decorators defined in Meta will be applied to every story variation.
+@see [Decorators](https://storybook.js.org/docs/addons/introduction/#1-decorators)`,name:"decorators",required:!1,type:{name:"DecoratorFunction<ReactRenderer, { [x: string]: any; }> | DecoratorFunction<ReactRenderer, { [x: string]: any; }>[]"}},parameters:{defaultValue:null,description:`Custom metadata for a story.
+@see [Parameters](https://storybook.js.org/docs/basics/writing-stories/#parameters)`,name:"parameters",required:!1,type:{name:"Parameters"}},args:{defaultValue:null,description:`Dynamic data that are provided (and possibly updated by) Storybook and its addons.
+@see [Arg story inputs](https://storybook.js.org/docs/react/api/csf#args-story-inputs)`,name:"args",required:!1,type:{name:"Partial<Args>"}},argTypes:{defaultValue:null,description:"ArgTypes encode basic metadata for args, such as `name`, `description`, `defaultValue` for an arg. These get automatically filled in by Storybook Docs.\n@see [Control annotations](https://github.com/storybookjs/storybook/blob/91e9dee33faa8eff0b342a366845de7100415367/addons/controls/README.md#control-annotations)",name:"argTypes",required:!1,type:{name:"Partial<ArgTypes<Args>>"}},loaders:{defaultValue:null,description:`Asynchronous functions which provide data for a story.
+@see [Loaders](https://storybook.js.org/docs/react/writing-stories/loaders)`,name:"loaders",required:!1,type:{name:"LoaderFunction<ReactRenderer, Args> | LoaderFunction<ReactRenderer, Args>[]"}},render:{defaultValue:null,description:"Define a custom render function for the story(ies). If not passed, a default render function by the renderer will be used.",name:"render",required:!1,type:{name:"ArgsStoryFn<ReactRenderer, Args>"}},storyName:{defaultValue:null,description:"Override the display name in the UI (CSF v2)",name:"storyName",required:!1,type:{name:"string"}},play:{defaultValue:null,description:"Function that is executed after the story is rendered.",name:"play",required:!1,type:{name:"PlayFunction<ReactRenderer, Args>"}},tags:{defaultValue:null,description:"Named tags for a story, used to filter stories in different contexts.",name:"tags",required:!1,type:{name:"string[]"}},story:{defaultValue:null,description:"@deprecated",name:"story",required:!1,type:{name:'Omit<StoryAnnotations<ReactRenderer, Args, Partial<Args>>, "story">'}}}}}catch{}const g={component:u,title:"Library/Example Card",tags:["autodocs"],decorators:[o]},a={args:{label:"Hello, World!"}},t={args:{label:"Hello, World!"},render:r=>e.jsx("div",{className:"mockup-window border bg-base-300",children:e.jsx("div",{className:"flex w-full justify-center p-8",children:e.jsx(u,{...r})})})};var s,n,d;a.parameters={...a.parameters,docs:{...(s=a.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {
+    label: "Hello, World!"
+  }
+} satisfies Story`,...(d=(n=a.parameters)==null?void 0:n.docs)==null?void 0:d.source}}};var i,l,c;t.parameters={...t.parameters,docs:{...(i=t.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: {
+    label: "Hello, World!"
+  },
+  render: args => <div className="mockup-window border bg-base-300">
+      <div className="flex w-full justify-center p-8">
+        <Component {...args} />
+      </div>
+    </div>
+} satisfies Story`,...(c=(l=t.parameters)==null?void 0:l.docs)==null?void 0:c.source}}};const b=["WithLabel","WithWindow"];export{a as WithLabel,t as WithWindow,b as __namedExportsOrder,g as default};
